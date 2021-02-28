@@ -67,6 +67,12 @@
 .countdownButtonActive {
     background: var(--white);
     color: var(--title);
+    display: flex;
+    align-items: center;
+}
+
+.countdownButtonActive svg{
+    height: 100%;
 }
 
 .countdownButtonActive:not(:disabled):hover{
@@ -78,5 +84,12 @@
 .countdownButton:disabled {
     background: var(--white);
     color: var(--text);
+    font-size: 1.2rem;
     cursor: not-allowed;
+    border-bottom: 5px solid var(--green);
+}
+
+.countdownButton:disabled img {
+
+    margin-left: 0.5rem;
 }
