@@ -3,6 +3,8 @@ import React from "react";
 import CompletedChallenges from "../components/CompletedChallenges";
 import Countdown from "../components/Countdown";
 import {ExperienceBar} from "../components/ExperienceBar";
+import { CountdownProvider } from "../contexts/CountdownContext";
+
 import Profile from "../components/Profile";
 
 import styles from '../styles/pages/Home.module.css'
@@ -17,7 +19,7 @@ export default function Home() {
         <title>Inicio | move.it</title>
       </Head>
     <ExperienceBar />
-
+    <CountdownProvider>
     <section>
       <div>
         <Profile />
@@ -28,6 +30,7 @@ export default function Home() {
         <ChallengeBox />
       </div>
     </section>
+    </CountdownProvider>
     </div>
   )
 }
