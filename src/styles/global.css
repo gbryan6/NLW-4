@@ -2,7 +2,7 @@
     --white: #fff;
     --background: #f2f3f5;
     --gray-line: #dcdde0;
-    --text-: #666666;
+    --text: #666666;
     --text-highlight: #b3b9ff;
     --title: #2e384d;
     --red: #E83f5b;
@@ -23,7 +23,7 @@
     }
 }
 
-body,* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
